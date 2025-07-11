@@ -1,0 +1,62 @@
+/* See It in Action Section */
+.cta {
+    background: white;
+    padding: 80px 0;
+}
+
+.cta-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.cta-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 20px;
+}
+
+.cta-text p {
+    color: #6b7280;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.cta-mockup {
+    text-align: center;
+}
+
+.mockup-device {
+    background: #1f2937;
+    border-radius: 20px;
+    padding: 20px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.mockup-device:hover {
+    transform: scale(1.05);
+}
+
+.mockup-screen {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mockup-screen h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
