@@ -1,22 +1,67 @@
 /* Ready to Focus Section */
 .ready-focus {
-    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    background-color: #f3f4f6; /* Light background color */
     padding: 80px 0;
     text-align: center;
-    color: white;
+}
+
+.ready-focus .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.ready-focus-text {
+    flex: 1;
+    text-align: left;
+    max-width: 600px;
 }
 
 .ready-focus h2 {
     font-size: 2.5rem;
     font-weight: bold;
+    color: #1f2937;
     margin-bottom: 20px;
 }
 
 .ready-focus p {
     font-size: 1.2rem;
-    margin-bottom: 40px;
-    opacity: 0.9;
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+.ready-focus .btn {
+    background-color: #6366f1;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+    font-size: 1rem;
+}
+
+.ready-focus .btn:hover {
+    background-color: #5855eb;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+}
+
+.ready-focus-image {
+    flex: 1;
+    text-align: center;
+}
+
+.ready-focus-image img {
+    width: 100%;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }

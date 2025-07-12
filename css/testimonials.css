@@ -25,6 +25,7 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     border: 1px solid #f3f4f6;
+    position: relative;
 }
 
 .testimonial-card:hover {
@@ -56,13 +57,10 @@
     display: flex;
     align-items: center;
     gap: 12px;
-}
-
-.reviewer-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .reviewer-info h4 {
@@ -73,4 +71,18 @@
 .reviewer-info p {
     color: #9ca3af;
     font-size: 14px;
+}
+
+.reviewer-avatar {
+    width: 60px; /* Size of the circular avatar */
+    height: 60px;
+    border-radius: 50%; /* Circular shape */
+    overflow: hidden; /* Ensures the image fits inside the circle */
+    border: 3px solid #6366f1; /* Border around the circle */
+}
+
+.reviewer-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the circle */
 }

@@ -1,62 +1,68 @@
 /* See It in Action Section */
-.cta {
-    background: white;
-    padding: 80px 0;
+.see-it-action {
+    background-color: #f8f9fc; /* Light background color */
+    padding: 100px 0; /* Adjust padding for spacing */
+    text-align: center;
 }
 
-.cta-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+.see-it-action .container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.cta-text h2 {
-    font-size: 2.5rem;
+.see-it-action-text {
+    flex: 1;
+    text-align: left;
+    max-width: 600px;
+}
+
+.see-it-action h2 {
+    font-size: 2.5rem; /* Adjusted for the large header */
     font-weight: bold;
     color: #1f2937;
     margin-bottom: 20px;
 }
 
-.cta-text p {
-    color: #6b7280;
+.see-it-action p {
     font-size: 1.1rem;
+    color: #6b7280;
     margin-bottom: 30px;
-    line-height: 1.7;
+    line-height: 1.8; /* Increased line height for better readability */
 }
 
-.cta-mockup {
-    text-align: center;
-}
-
-.mockup-device {
-    background: #1f2937;
-    border-radius: 20px;
-    padding: 20px;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.mockup-device:hover {
-    transform: scale(1.05);
-}
-
-.mockup-screen {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 12px;
-    padding: 40px;
+.see-it-action .btn {
+    background-color: #6366f1; /* Purple color */
     color: white;
-    text-align: center;
-    min-height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px; /* Rounded corners */
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+    font-size: 1.1rem; /* Adjusted font size */
 }
 
-.mockup-screen h3 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+.see-it-action .btn:hover {
+    background-color: #5855eb;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+}
+
+.see-it-action-image {
+    flex: 1;
+    text-align: right;
+}
+
+.see-it-action-image img {
+    width: 100%;
+    max-width: 650px; /* Make sure the image fits */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
 }
